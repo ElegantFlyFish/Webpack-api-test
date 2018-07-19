@@ -1,7 +1,7 @@
-export function square(x){
-  return x * x;
-}
+import _ from "lodash";
 
-export function cube(x){
-  return x * x * x;
+export default function cube(){
+  return _.join(['meth','fn'])
+
+  
 }

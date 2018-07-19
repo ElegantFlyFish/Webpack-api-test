@@ -1,30 +1,25 @@
-//import _ from 'lodash';
-//import print from './print';
-//import './style.css';
-import { cube } from './meth.js';
+import './style.css';
+import _ from 'lodash';
+import cube from './meth.js';
 
 const content = ()=>{
 
   let ele = document.createElement('div');
-  //let btn = document.createElement('button');
 
-  // ele.innerHTML = _.join(['aaa','ccc']);
-  // btn.innerText = 'click';
-  // btn.onclick = print;
-  // //print();
-  // ele.appendChild(btn);
-
-  ele.innerHTML = [
-    '5 cube is:',
-    cube(5)
-  ].join('')
+  ele.innerHTML = _.join(
+    [
+      '5 cube is:',
+       cube(7)
+    ]
+  );
 
   return ele;
 
+
+  
 }
 
 document.body.appendChild(content());
-
 
 //  if (module.hot) {
 //    module.hot.accept('./print.js', function() {
